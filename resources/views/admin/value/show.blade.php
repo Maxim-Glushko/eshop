@@ -1,0 +1,1 @@
+{!! Form::select('value_id', [''=>'+ значение'] + $values, null, ['class' => 'form-control']) !!}

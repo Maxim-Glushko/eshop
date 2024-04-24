@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    
+    RewriteRule ^термоперенос$ /thermal-transfer [R=301,L]
+    RewriteRule ^шелкография$ /silk-screen-printing [R=301,L]
+    RewriteRule ^sample-page$ /sublimation [R=301,L]
+    RewriteRule ^polnocvet$ /direct-print [R=301,L]
+    
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

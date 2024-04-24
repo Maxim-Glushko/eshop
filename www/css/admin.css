@@ -1,0 +1,85 @@
+.menu, .menu li {
+    list-style-type: none;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+.left-menu li li {
+    padding-left:30px;
+}
+
+.popup_selector {
+    width:200px;
+    height:200px;
+    display:block;
+    text-decoration:none;
+}
+.popup_selector:hover {
+    text-decoration:none;
+}
+.popup_selector.new {
+}
+.popup_selector img {
+    width: 200px;
+    height:200px;
+    cursor:pointer;
+    position:absolute;
+}
+.popup_selector.new img {
+    display:none;
+}
+.popup_selector span {
+    display:none;
+}
+.popup_selector.new span {
+    display:block;
+    border:solid 1px;
+    width: 200px;
+    height:200px;
+    font-size:50px;
+    padding:65px 0 0 73px;
+    cursor:pointer;
+    position:absolute;
+}
+
+
+.edit-img {
+    display:inline-block;
+    position:relative;
+    margin:0 10px 10px 0;
+    width:200px;
+    height:237px;
+}
+.img-del {
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.img-up {
+    position:absolute;
+    bottom:37px;
+    left:0px;
+}
+.img-down {
+    position:absolute;
+    bottom:37px;
+    right:0px;
+}
+.img-face {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.img-text {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+.edit-img input[type="text"] {
+    width:158px;
+    margin:2px 0 0 0;
+}
+
+.processed * {
+    color:#999;
+}
